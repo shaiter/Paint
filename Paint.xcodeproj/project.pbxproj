@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708D6DE203D46C80075D863 /* DrawPanelView.swift */; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
 		17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A487203C3A37004E4BDB /* ViewController.swift */; };
 		17F7A48A203C3A37004E4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A489203C3A37004E4BDB /* Assets.xcassets */; };
 		17F7A48D203C3A37004E4BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A48B203C3A37004E4BDB /* Main.storyboard */; };
 		17F7A499203C3A37004E4BDB /* PaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A498203C3A37004E4BDB /* PaintTests.swift */; };
 		17F7A4A4203C3A37004E4BDB /* PaintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4A3203C3A37004E4BDB /* PaintUITests.swift */; };
+		17F7A4B2203C3A82004E4BDB /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B1203C3A82004E4BDB /* Figure.swift */; };
+		17F7A4B4203C3AC0004E4BDB /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B3203C3AC0004E4BDB /* Line.swift */; };
+		17F7A4B6203C3B16004E4BDB /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B5203C3B16004E4BDB /* Rectangle.swift */; };
+		17F7A4B8203C3B42004E4BDB /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B7203C3B42004E4BDB /* Ellipse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1708D6DE203D46C80075D863 /* DrawPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPanelView.swift; sourceTree = "<group>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F7A487203C3A37004E4BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +52,10 @@
 		17F7A49F203C3A37004E4BDB /* PaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A4A3203C3A37004E4BDB /* PaintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintUITests.swift; sourceTree = "<group>"; };
 		17F7A4A5203C3A37004E4BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F7A4B1203C3A82004E4BDB /* Figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
+		17F7A4B3203C3AC0004E4BDB /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		17F7A4B5203C3B16004E4BDB /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		17F7A4B7203C3B42004E4BDB /* Ellipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,11 @@
 			children = (
 				17F7A485203C3A37004E4BDB /* AppDelegate.swift */,
 				17F7A487203C3A37004E4BDB /* ViewController.swift */,
+				1708D6DE203D46C80075D863 /* DrawPanelView.swift */,
+				17F7A4B1203C3A82004E4BDB /* Figure.swift */,
+				17F7A4B3203C3AC0004E4BDB /* Line.swift */,
+				17F7A4B5203C3B16004E4BDB /* Rectangle.swift */,
+				17F7A4B7203C3B42004E4BDB /* Ellipse.swift */,
 				17F7A489203C3A37004E4BDB /* Assets.xcassets */,
 				17F7A48B203C3A37004E4BDB /* Main.storyboard */,
 				17F7A48E203C3A37004E4BDB /* Info.plist */,
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F7A4B8203C3B42004E4BDB /* Ellipse.swift in Sources */,
+				17F7A4B6203C3B16004E4BDB /* Rectangle.swift in Sources */,
 				17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */,
+				1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */,
+				17F7A4B4203C3AC0004E4BDB /* Line.swift in Sources */,
 				17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */,
+				17F7A4B2203C3A82004E4BDB /* Figure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
