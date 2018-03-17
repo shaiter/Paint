@@ -8,25 +8,22 @@
 
 import AppKit
 
-class Polygon: Figure {
+open class Polygon: Figure {
     
-    override func draw() {
-        let path = NSBezierPath()
+    override public func draw() {
         path.move(to: CGPoint(x: self.points[0].x, y: self.points[0].y))
         for index in 1..<self.points.count {
             path.line(to: CGPoint(x: self.points[index].x, y: self.points[index].y))
         }
         path.line(to: CGPoint(x: self.points[0].x, y: self.points[0].y))
-        path.lineWidth = self.lineWidth
-        self.strokeColor.setStroke()
-        path.stroke()
+        super.draw()
     }
     
-    override init(points: [Point], strokeColor: NSColor, lineWidth: CGFloat) {
+    public override init(points: [Point], strokeColor: NSColor, lineWidth: CGFloat) {
         super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
     }
     
-    init(points:[Point]) {
+    public init(points:[Point]) {
         super.init(points: points)
     }
 }

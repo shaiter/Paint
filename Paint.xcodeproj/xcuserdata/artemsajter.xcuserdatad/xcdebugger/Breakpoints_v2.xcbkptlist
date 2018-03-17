@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Paint/DrawPanelView.swift"
-            timestampString = "542962510.8877881"
+            timestampString = "542997275.7500319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Paint/Square.swift"
-            timestampString = "542963089.740405"
+            timestampString = "542966945.329762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "init(startPointX:startPointY:endPointX:endPointY:strokeColor:lineWidth:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Paint/Square.swift"
-            timestampString = "542963089.740513"
+            timestampString = "542966945.329839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "init(startPointX:startPointY:endPointX:endPointY:strokeColor:lineWidth:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Paint/Square.swift"
-            timestampString = "542963089.740605"
+            timestampString = "542966945.3299609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "init(startPointX:startPointY:endPointX:endPointY:)"
             landmarkType = "7">
          </BreakpointContent>

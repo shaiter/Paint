@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Figures
 
 class DrawPanelView: NSView {
 
@@ -16,7 +17,6 @@ class DrawPanelView: NSView {
         for index in 0..<list.count {
             list[index].draw()
         }
-        
     }
     
 }

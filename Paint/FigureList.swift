@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Figures
 
 class FigureList: Sequence, IteratorProtocol {
     

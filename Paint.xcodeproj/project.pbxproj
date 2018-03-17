@@ -8,23 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708D6DE203D46C80075D863 /* DrawPanelView.swift */; };
-		1716CD992046707400CECDC5 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD982046707400CECDC5 /* Square.swift */; };
-		1716CD9B2046822400CECDC5 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9A2046822400CECDC5 /* Circle.swift */; };
 		1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9C204955F300CECDC5 /* FigureList.swift */; };
-		1795E312205C2BCB0042DFC2 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795E311205C2BCB0042DFC2 /* Polygon.swift */; };
+		176E793F205D7C9D00A49DD6 /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; };
+		176E7940205D7C9D00A49DD6 /* Figures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
 		17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A487203C3A37004E4BDB /* ViewController.swift */; };
 		17F7A48A203C3A37004E4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A489203C3A37004E4BDB /* Assets.xcassets */; };
 		17F7A48D203C3A37004E4BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A48B203C3A37004E4BDB /* Main.storyboard */; };
 		17F7A499203C3A37004E4BDB /* PaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A498203C3A37004E4BDB /* PaintTests.swift */; };
 		17F7A4A4203C3A37004E4BDB /* PaintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4A3203C3A37004E4BDB /* PaintUITests.swift */; };
-		17F7A4B2203C3A82004E4BDB /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B1203C3A82004E4BDB /* Figure.swift */; };
-		17F7A4B4203C3AC0004E4BDB /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B3203C3AC0004E4BDB /* Line.swift */; };
-		17F7A4B6203C3B16004E4BDB /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B5203C3B16004E4BDB /* Rectangle.swift */; };
-		17F7A4B8203C3B42004E4BDB /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A4B7203C3B42004E4BDB /* Ellipse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		176E793D205D7C9100A49DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176E7939205D7C9100A49DD6 /* Figures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 176E790B205D74CD00A49DD6;
+			remoteInfo = Figures;
+		};
+		176E7941205D7C9D00A49DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176E7939205D7C9100A49DD6 /* Figures.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 176E790A205D74CD00A49DD6;
+			remoteInfo = Figures;
+		};
 		17F7A495203C3A37004E4BDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17F7A47A203C3A37004E4BDB /* Project object */;
@@ -41,12 +50,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		176E78FC205D6F0F00A49DD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				176E7940205D7C9D00A49DD6 /* Figures.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1708D6DE203D46C80075D863 /* DrawPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPanelView.swift; sourceTree = "<group>"; };
-		1716CD982046707400CECDC5 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
-		1716CD9A2046822400CECDC5 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		1716CD9C204955F300CECDC5 /* FigureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureList.swift; sourceTree = "<group>"; };
-		1795E311205C2BCB0042DFC2 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		176E7939205D7C9100A49DD6 /* Figures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Figures.xcodeproj; path = Figures/Figures.xcodeproj; sourceTree = "<group>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F7A487203C3A37004E4BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,10 +81,6 @@
 		17F7A49F203C3A37004E4BDB /* PaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A4A3203C3A37004E4BDB /* PaintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintUITests.swift; sourceTree = "<group>"; };
 		17F7A4A5203C3A37004E4BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17F7A4B1203C3A82004E4BDB /* Figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
-		17F7A4B3203C3AC0004E4BDB /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		17F7A4B5203C3B16004E4BDB /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
-		17F7A4B7203C3B42004E4BDB /* Ellipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176E793F205D7C9D00A49DD6 /* Figures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +109,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		176E793A205D7C9100A49DD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				176E793E205D7C9100A49DD6 /* Figures.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		17F7A479203C3A37004E4BDB = {
 			isa = PBXGroup;
 			children = (
+				176E7939205D7C9100A49DD6 /* Figures.xcodeproj */,
 				17F7A484203C3A37004E4BDB /* Paint */,
 				17F7A497203C3A37004E4BDB /* PaintTests */,
 				17F7A4A2203C3A37004E4BDB /* PaintUITests */,
@@ -118,13 +145,6 @@
 				17F7A487203C3A37004E4BDB /* ViewController.swift */,
 				1708D6DE203D46C80075D863 /* DrawPanelView.swift */,
 				1716CD9C204955F300CECDC5 /* FigureList.swift */,
-				17F7A4B1203C3A82004E4BDB /* Figure.swift */,
-				17F7A4B3203C3AC0004E4BDB /* Line.swift */,
-				17F7A4B5203C3B16004E4BDB /* Rectangle.swift */,
-				1716CD982046707400CECDC5 /* Square.swift */,
-				17F7A4B7203C3B42004E4BDB /* Ellipse.swift */,
-				1716CD9A2046822400CECDC5 /* Circle.swift */,
-				1795E311205C2BCB0042DFC2 /* Polygon.swift */,
 				17F7A489203C3A37004E4BDB /* Assets.xcassets */,
 				17F7A48B203C3A37004E4BDB /* Main.storyboard */,
 				17F7A48E203C3A37004E4BDB /* Info.plist */,
@@ -161,10 +181,12 @@
 				17F7A47E203C3A37004E4BDB /* Sources */,
 				17F7A47F203C3A37004E4BDB /* Frameworks */,
 				17F7A480203C3A37004E4BDB /* Resources */,
+				176E78FC205D6F0F00A49DD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				176E7942205D7C9D00A49DD6 /* PBXTargetDependency */,
 			);
 			name = Paint;
 			productName = Paint;
@@ -220,6 +242,11 @@
 					17F7A481203C3A37004E4BDB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					17F7A493203C3A37004E4BDB = {
 						CreatedOnToolsVersion = 9.2;
@@ -244,6 +271,12 @@
 			mainGroup = 17F7A479203C3A37004E4BDB;
 			productRefGroup = 17F7A483203C3A37004E4BDB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 176E793A205D7C9100A49DD6 /* Products */;
+					ProjectRef = 176E7939205D7C9100A49DD6 /* Figures.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				17F7A481203C3A37004E4BDB /* Paint */,
@@ -252,6 +285,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		176E793E205D7C9100A49DD6 /* Figures.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Figures.framework;
+			remoteRef = 176E793D205D7C9100A49DD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		17F7A480203C3A37004E4BDB /* Resources */ = {
@@ -284,17 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1716CD992046707400CECDC5 /* Square.swift in Sources */,
-				17F7A4B8203C3B42004E4BDB /* Ellipse.swift in Sources */,
-				1716CD9B2046822400CECDC5 /* Circle.swift in Sources */,
-				17F7A4B6203C3B16004E4BDB /* Rectangle.swift in Sources */,
 				17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */,
-				1795E312205C2BCB0042DFC2 /* Polygon.swift in Sources */,
 				1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */,
 				1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */,
-				17F7A4B4203C3AC0004E4BDB /* Line.swift in Sources */,
 				17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */,
-				17F7A4B2203C3A82004E4BDB /* Figure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +353,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		176E7942205D7C9D00A49DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Figures;
+			targetProxy = 176E7941205D7C9D00A49DD6 /* PBXContainerItemProxy */;
+		};
 		17F7A496203C3A37004E4BDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17F7A481203C3A37004E4BDB /* Paint */;
@@ -450,11 +491,15 @@
 		17F7A4A9203C3A37004E4BDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Paint/Paint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32X6A9H2H2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Paint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shaiter.Paint;
@@ -466,11 +511,15 @@
 		17F7A4AA203C3A37004E4BDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Paint/Paint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32X6A9H2H2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Paint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shaiter.Paint;
