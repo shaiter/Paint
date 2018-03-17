@@ -6,12 +6,27 @@
 //  Copyright © 2018 Артём Шайтер. All rights reserved.
 //
 
-import Foundation
+import AppKit
 
 class Figure {
     
-    init() {
-        
+    var strokeColor: NSColor
+    var lineWidth: CGFloat
+    
+    var points = [Point]()
+    
+    
+    init(points: [Point], strokeColor: NSColor = NSColor.black, lineWidth: CGFloat = 2) {
+        self.strokeColor = strokeColor
+        self.lineWidth = lineWidth
+        self.points = points
     }
     
+    func draw() {}
+    
+}
+
+struct Point {
+    var x: Double
+    var y: Double
 }

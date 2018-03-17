@@ -11,21 +11,21 @@ import AppKit
 
 class Rectangle: Figure {
     
-    var startPoint: (x: Int, y: Int)
-    var size: (x: Int, y: Int)
-    
-    func draw() {
-        let path = NSBezierPath(rect: NSRect(x: self.startPoint.x, y: self.startPoint.x, width: self.size.x, height: self.size.y))
-        path.lineWidth = 5
-        NSColor.black.setStroke()
+    override func draw() {
+        let path = NSBezierPath(rect: NSRect(x: self.points[0].x, y: self.points[0].y, width: (self.points[1].x - self.points[0].x), height: (self.points[1].y - self.points[0].y)))
+        path.lineWidth = self.lineWidth
+        self.strokeColor.setStroke()
         path.stroke()
     }
     
-    init(startPoint: (x: Int, y: Int), size: (x: Int, y: Int)) {
-        self.startPoint.x = startPoint.x
-        self.startPoint.y = startPoint.y
-        self.size.x = size.x
-        self.size.y = size.y
+    init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double, strokeColor: NSColor, lineWidth: CGFloat) {
+        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+        super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
+    }
+    
+    init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double) {
+        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+        super.init(points: points)
     }
     
 }

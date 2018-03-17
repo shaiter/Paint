@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708D6DE203D46C80075D863 /* DrawPanelView.swift */; };
+		1716CD992046707400CECDC5 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD982046707400CECDC5 /* Square.swift */; };
+		1716CD9B2046822400CECDC5 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9A2046822400CECDC5 /* Circle.swift */; };
+		1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9C204955F300CECDC5 /* FigureList.swift */; };
+		1795E312205C2BCB0042DFC2 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795E311205C2BCB0042DFC2 /* Polygon.swift */; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
 		17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A487203C3A37004E4BDB /* ViewController.swift */; };
 		17F7A48A203C3A37004E4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A489203C3A37004E4BDB /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		1708D6DE203D46C80075D863 /* DrawPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPanelView.swift; sourceTree = "<group>"; };
+		1716CD982046707400CECDC5 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		1716CD9A2046822400CECDC5 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		1716CD9C204955F300CECDC5 /* FigureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureList.swift; sourceTree = "<group>"; };
+		1795E311205C2BCB0042DFC2 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F7A487203C3A37004E4BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,10 +117,14 @@
 				17F7A485203C3A37004E4BDB /* AppDelegate.swift */,
 				17F7A487203C3A37004E4BDB /* ViewController.swift */,
 				1708D6DE203D46C80075D863 /* DrawPanelView.swift */,
+				1716CD9C204955F300CECDC5 /* FigureList.swift */,
 				17F7A4B1203C3A82004E4BDB /* Figure.swift */,
 				17F7A4B3203C3AC0004E4BDB /* Line.swift */,
 				17F7A4B5203C3B16004E4BDB /* Rectangle.swift */,
+				1716CD982046707400CECDC5 /* Square.swift */,
 				17F7A4B7203C3B42004E4BDB /* Ellipse.swift */,
+				1716CD9A2046822400CECDC5 /* Circle.swift */,
+				1795E311205C2BCB0042DFC2 /* Polygon.swift */,
 				17F7A489203C3A37004E4BDB /* Assets.xcassets */,
 				17F7A48B203C3A37004E4BDB /* Main.storyboard */,
 				17F7A48E203C3A37004E4BDB /* Info.plist */,
@@ -272,9 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1716CD992046707400CECDC5 /* Square.swift in Sources */,
 				17F7A4B8203C3B42004E4BDB /* Ellipse.swift in Sources */,
+				1716CD9B2046822400CECDC5 /* Circle.swift in Sources */,
 				17F7A4B6203C3B16004E4BDB /* Rectangle.swift in Sources */,
 				17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */,
+				1795E312205C2BCB0042DFC2 /* Polygon.swift in Sources */,
+				1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */,
 				1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */,
 				17F7A4B4203C3AC0004E4BDB /* Line.swift in Sources */,
 				17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */,

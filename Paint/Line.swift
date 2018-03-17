@@ -10,24 +10,23 @@ import AppKit
 
 class Line: Figure {
     
-    var startPoint: (x: Int, y: Int)
-    var endPoint: (x: Int, y: Int)
-    
-    
-    func draw() {
+    override func draw() {
         let path = NSBezierPath()
-        path.move(to: CGPoint(x: self.startPoint.x, y: self.startPoint.y))
-        path.line(to: CGPoint(x: self.endPoint.x, y: self.endPoint.y))
-        path.lineWidth = 5
-        NSColor.black.setStroke()
+        path.move(to: CGPoint(x: self.points[0].x, y: self.points[0].y))
+        path.line(to: CGPoint(x: self.points[1].x, y: self.points[1].y))
+        path.lineWidth = self.lineWidth
+        self.strokeColor.setStroke()
         path.stroke()
     }
     
-    init(startPoint: (x: Int, y: Int), endPoint: (x: Int, y: Int)) {
-        self.startPoint.x = startPoint.x
-        self.startPoint.y = startPoint.y
-        self.endPoint.x = endPoint.x
-        self.endPoint.y = endPoint.y
+    init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double, strokeColor: NSColor, lineWidth: CGFloat) {
+        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+        super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
+    }
+    
+    init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double) {
+        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+        super.init(points: points)
     }
     
 }
