@@ -27,7 +27,6 @@ class ViewController: NSViewController {
         list.append(Circle(startPointX: 100, startPointY: 100, endPointX: 200, endPointY: 200))
         
         list.append(Polygon(points: [Point(x: 10, y: 10), Point(x: 200, y: 10), Point(x: 250, y: 250), Point(x: 10, y: 200), Point(x: 20, y: 100)]))
-        
     }
     
     override var representedObject: Any? {

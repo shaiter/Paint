@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708D6DE203D46C80075D863 /* DrawPanelView.swift */; };
 		1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9C204955F300CECDC5 /* FigureList.swift */; };
+		175D04C4205E6B8100D07B90 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D04C3205E6B8100D07B90 /* Drawing.swift */; };
 		176E793F205D7C9D00A49DD6 /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; };
 		176E7940205D7C9D00A49DD6 /* Figures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		1708D6DE203D46C80075D863 /* DrawPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPanelView.swift; sourceTree = "<group>"; };
 		1716CD9C204955F300CECDC5 /* FigureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureList.swift; sourceTree = "<group>"; };
+		175D04C3205E6B8100D07B90 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		176E7939205D7C9100A49DD6 /* Figures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Figures.xcodeproj; path = Figures/Figures.xcodeproj; sourceTree = "<group>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				17F7A485203C3A37004E4BDB /* AppDelegate.swift */,
 				17F7A487203C3A37004E4BDB /* ViewController.swift */,
+				175D04C3205E6B8100D07B90 /* Drawing.swift */,
 				1708D6DE203D46C80075D863 /* DrawPanelView.swift */,
 				1716CD9C204955F300CECDC5 /* FigureList.swift */,
 				17F7A489203C3A37004E4BDB /* Assets.xcassets */,
@@ -331,6 +334,7 @@
 				1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */,
 				1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */,
 				17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */,
+				175D04C4205E6B8100D07B90 /* Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

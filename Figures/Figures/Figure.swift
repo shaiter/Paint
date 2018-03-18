@@ -10,10 +10,10 @@ import AppKit
 
 open class Figure {
     
-    private(set) var strokeColor: NSColor
-    private(set) var lineWidth: CGFloat
+    public var strokeColor: NSColor
+    public var lineWidth: CGFloat
     
-    private(set) var points = [Point]()
+    public var points = [Point]()
     
     init(points: [Point], strokeColor: NSColor = NSColor.black, lineWidth: CGFloat = 2) {
         self.strokeColor = strokeColor
@@ -32,8 +32,8 @@ open class Figure {
 }
 
 public struct Point {
-    var x: Double
-    var y: Double
+    public var x: Double
+    public var y: Double
     
     public init(x: Double, y: Double) {
         self.x = x
