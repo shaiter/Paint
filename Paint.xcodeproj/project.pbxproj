@@ -12,6 +12,13 @@
 		175D04C4205E6B8100D07B90 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D04C3205E6B8100D07B90 /* Drawing.swift */; };
 		176E793F205D7C9D00A49DD6 /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; };
 		176E7940205D7C9D00A49DD6 /* Figures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17E8FAFA206ED25300B08046 /* LineCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAF9206ED25300B08046 /* LineCreator.swift */; };
+		17E8FAFC206ED28100B08046 /* RectangleCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFB206ED28100B08046 /* RectangleCreator.swift */; };
+		17E8FAFE206ED2CB00B08046 /* SquareCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFD206ED2CB00B08046 /* SquareCreator.swift */; };
+		17E8FB00206ED31500B08046 /* EllipseCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFF206ED31500B08046 /* EllipseCreator.swift */; };
+		17E8FB02206ED33600B08046 /* CircleCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FB01206ED33600B08046 /* CircleCreator.swift */; };
+		17E8FB04206ED38E00B08046 /* FigureCreatorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */; };
+		17F725EE206ECCAA003F6E2B /* FigureCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F725ED206ECCAA003F6E2B /* FigureCreator.swift */; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
 		17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A487203C3A37004E4BDB /* ViewController.swift */; };
 		17F7A48A203C3A37004E4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A489203C3A37004E4BDB /* Assets.xcassets */; };
@@ -70,6 +77,13 @@
 		1716CD9C204955F300CECDC5 /* FigureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureList.swift; sourceTree = "<group>"; };
 		175D04C3205E6B8100D07B90 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		176E7939205D7C9100A49DD6 /* Figures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Figures.xcodeproj; path = Figures/Figures.xcodeproj; sourceTree = "<group>"; };
+		17E8FAF9206ED25300B08046 /* LineCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineCreator.swift; sourceTree = "<group>"; };
+		17E8FAFB206ED28100B08046 /* RectangleCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCreator.swift; sourceTree = "<group>"; };
+		17E8FAFD206ED2CB00B08046 /* SquareCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCreator.swift; sourceTree = "<group>"; };
+		17E8FAFF206ED31500B08046 /* EllipseCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseCreator.swift; sourceTree = "<group>"; };
+		17E8FB01206ED33600B08046 /* CircleCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCreator.swift; sourceTree = "<group>"; };
+		17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureCreatorsList.swift; sourceTree = "<group>"; };
+		17F725ED206ECCAA003F6E2B /* FigureCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FigureCreator.swift; path = "/Users/artemsajter/Desktop/ООП/Paint/Paint/FigureCreator.swift"; sourceTree = "<absolute>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F7A487203C3A37004E4BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +133,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17F725EF206ECCB4003F6E2B /* Creators */ = {
+			isa = PBXGroup;
+			children = (
+				17F725ED206ECCAA003F6E2B /* FigureCreator.swift */,
+				17E8FAF9206ED25300B08046 /* LineCreator.swift */,
+				17E8FAFB206ED28100B08046 /* RectangleCreator.swift */,
+				17E8FAFD206ED2CB00B08046 /* SquareCreator.swift */,
+				17E8FAFF206ED31500B08046 /* EllipseCreator.swift */,
+				17E8FB01206ED33600B08046 /* CircleCreator.swift */,
+				17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */,
+			);
+			path = Creators;
+			sourceTree = "<group>";
+		};
 		17F7A479203C3A37004E4BDB = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +171,7 @@
 		17F7A484203C3A37004E4BDB /* Paint */ = {
 			isa = PBXGroup;
 			children = (
+				17F725EF206ECCB4003F6E2B /* Creators */,
 				17F7A485203C3A37004E4BDB /* AppDelegate.swift */,
 				17F7A487203C3A37004E4BDB /* ViewController.swift */,
 				175D04C3205E6B8100D07B90 /* Drawing.swift */,
@@ -330,10 +359,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F725EE206ECCAA003F6E2B /* FigureCreator.swift in Sources */,
 				17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */,
 				1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */,
+				17E8FAFE206ED2CB00B08046 /* SquareCreator.swift in Sources */,
 				1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */,
 				17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */,
+				17E8FAFA206ED25300B08046 /* LineCreator.swift in Sources */,
+				17E8FB00206ED31500B08046 /* EllipseCreator.swift in Sources */,
+				17E8FB04206ED38E00B08046 /* FigureCreatorsList.swift in Sources */,
+				17E8FAFC206ED28100B08046 /* RectangleCreator.swift in Sources */,
+				17E8FB02206ED33600B08046 /* CircleCreator.swift in Sources */,
 				175D04C4205E6B8100D07B90 /* Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
