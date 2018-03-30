@@ -9,24 +9,8 @@
 import Foundation
 import Figures
 
-class CreatorsList: Sequence, IteratorProtocol {
+class CreatorsList {
     
-    var count = 0
+    static var creators = [LineCreater(), RectangleCreater(), SquareCreater(), EllipseCreater(), CircleCreater()]
     
-    func next() -> Int? {
-        if count == 0 {
-            return nil
-        } else {
-            defer { count -= 1 }
-            return count
-        }
-    }
-    
-    private var creatorsList = [LineCreater(), RectangleCreater(), SquareCreater(), EllipseCreater(), CircleCreater()]
-    
-    subscript(index: Int) -> Figure{
-        get{
-            return list[index]
-        }
-    }
 }

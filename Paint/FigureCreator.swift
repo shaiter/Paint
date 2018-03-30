@@ -9,6 +9,7 @@ import Foundation
 import Figures
 
 class FigureCreator {
-    func create() -> Figure? {return nil} 
+    func create() -> Figure? {return nil}
+    
 }
 

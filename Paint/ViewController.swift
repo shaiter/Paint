@@ -12,41 +12,32 @@ import Figures
 
 var list = [Figure]()
 
-var newFigure: Figure = Line(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+var creator: FigureCreator = LineCreater()
 
 class ViewController: NSViewController {
     
     @IBAction func setLine(_ sender: NSButton) {
-        newFigure = Line(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+        creator = LineCreater()
     }
     
     @IBAction func setSquare(_ sender: NSButton) {
-        newFigure = Square(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+        creator = SquareCreater()
     }
     
     @IBAction func setRectangle(_ sender: NSButton) {
-        newFigure = Rectangle(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+        creator = RectangleCreater()
     }
     
     @IBAction func setCircle(_ sender: NSButton) {
-        newFigure = Circle(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+        creator = CircleCreater()
     }
     
     @IBAction func setEllipse(_ sender: NSButton) {
-        newFigure = Ellipse(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+        creator = EllipseCreater()
     }
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        createAListOfFigures()
-        //newFigure = Line
-    }
-
-    func createAListOfFigures() {
-        list.append(Line(startPoint: CGPoint(x: 10.0,y: 10.0), endPoint: CGPoint(x: 100.0, y: 100.0)))
     }
     
     override var representedObject: Any? {

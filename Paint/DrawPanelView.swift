@@ -11,16 +11,12 @@ import Figures
 
 class DrawPanelView: NSView {
     
-//    var subview: NSView?
+    var newFigure = creator.create()!
     
     override func mouseDown(with event: NSEvent) {
         
-//        subview = NSView(frame: self.bounds)
-//        addSubview(subview!)
-        
         let mouseCoord = event.locationInWindow
-        
-        print(mouseCoord)
+        newFigure = creator.create()!
         newFigure.points[0] = mouseCoord
         newFigure.points[1] = mouseCoord
         list.append(newFigure)

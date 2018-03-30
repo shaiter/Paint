@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -713,7 +713,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="716" height="368"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </customView>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tU6-57-2d6">
+                            <button identifier="Line" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tU6-57-2d6">
                                 <rect key="frame" x="0.0" y="365" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="line" imagePosition="left" borderStyle="border" inset="2" id="8OT-19-vtX">
@@ -721,10 +721,10 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setLine:" target="XfG-lQ-9wD" id="XAr-n6-SFP"/>
+                                    <action selector="setLine:" target="XfG-lQ-9wD" id="8no-xr-ZNg"/>
                                 </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zny-2F-abx">
+                            <button identifier="Square" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zny-2F-abx">
                                 <rect key="frame" x="74" y="365" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="square" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ZHR-vr-fcg">
@@ -732,10 +732,10 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setSquare:" target="XfG-lQ-9wD" id="0ob-Xw-0jT"/>
+                                    <action selector="setSquare:" target="XfG-lQ-9wD" id="hq6-52-hiT"/>
                                 </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apv-DN-phu">
+                            <button identifier="Rectangle" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apv-DN-phu">
                                 <rect key="frame" x="148" y="365" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="rectangle" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="2YI-H1-H9K">
@@ -743,10 +743,10 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setRectangle:" target="XfG-lQ-9wD" id="IDX-qj-PWI"/>
+                                    <action selector="setRectangle:" target="XfG-lQ-9wD" id="vlA-Q3-BAE"/>
                                 </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSY-Vf-xGk">
+                            <button identifier="Circle" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSY-Vf-xGk">
                                 <rect key="frame" x="222" y="365" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="circle" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4Qc-vU-1Ls">
@@ -754,10 +754,10 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setCircle:" target="XfG-lQ-9wD" id="dk0-zF-nK8"/>
+                                    <action selector="setCircle:" target="XfG-lQ-9wD" id="7DZ-Ca-Z9H"/>
                                 </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5m-c6-V23">
+                            <button identifier="Ellipse" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5m-c6-V23">
                                 <rect key="frame" x="296" y="365" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ellipse" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="SEx-Ae-BEJ">
@@ -765,7 +765,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setEllipse:" target="XfG-lQ-9wD" id="ven-nn-4AN"/>
+                                    <action selector="setEllipse:" target="XfG-lQ-9wD" id="9Bf-zv-KrV"/>
                                 </connections>
                             </button>
                         </subviews>
