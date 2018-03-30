@@ -10,23 +10,43 @@ import Cocoa
 import AppKit
 import Figures
 
-let list = FigureList()
+var list = [Figure]()
+
+var newFigure: Figure = Line(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
 
 class ViewController: NSViewController {
+    
+    @IBAction func setLine(_ sender: NSButton) {
+        newFigure = Line(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+    }
+    
+    @IBAction func setSquare(_ sender: NSButton) {
+        newFigure = Square(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+    }
+    
+    @IBAction func setRectangle(_ sender: NSButton) {
+        newFigure = Rectangle(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+    }
+    
+    @IBAction func setCircle(_ sender: NSButton) {
+        newFigure = Circle(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+    }
+    
+    @IBAction func setEllipse(_ sender: NSButton) {
+        newFigure = Ellipse(startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 0))
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         createAListOfFigures()
+        //newFigure = Line
     }
 
     func createAListOfFigures() {
-        list.append(Line(startPointX: 10, startPointY: 10, endPointX: 200, endPointY: 200, strokeColor: NSColor.green, lineWidth: 5.0))
-        list.append(Rectangle(startPointX: 45, startPointY: 50, endPointX: 200, endPointY: 90, strokeColor: NSColor.red, lineWidth: 10.0))
-        list.append(Square(startPointX: 100, startPointY: 100, endPointX: 200, endPointY: 200))
-        list.append(Ellipse(startPointX: 45, startPointY: 50, endPointX: 200, endPointY: 90))
-        list.append(Circle(startPointX: 100, startPointY: 100, endPointX: 200, endPointY: 200))
-        
-        list.append(Polygon(points: [Point(x: 10, y: 10), Point(x: 200, y: 10), Point(x: 250, y: 250), Point(x: 10, y: 200), Point(x: 20, y: 100)]))
+        list.append(Line(startPoint: CGPoint(x: 10.0,y: 10.0), endPoint: CGPoint(x: 100.0, y: 100.0)))
     }
     
     override var representedObject: Any? {
@@ -34,7 +54,6 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
 
 }
 

@@ -66,9 +66,9 @@
 				176E791B205D74F700A49DD6 /* Line.swift */,
 				176E7919205D74F700A49DD6 /* Rectangle.swift */,
 				176E791A205D74F700A49DD6 /* Square.swift */,
+				176E7916205D74F700A49DD6 /* Polygon.swift */,
 				176E791C205D74F800A49DD6 /* Ellipse.swift */,
 				176E7917205D74F700A49DD6 /* Circle.swift */,
-				176E7916205D74F700A49DD6 /* Polygon.swift */,
 			);
 			path = Figures;
 			sourceTree = "<group>";

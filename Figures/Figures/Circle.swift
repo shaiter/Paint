@@ -15,22 +15,22 @@ open class Circle: Figure {
         super.draw()
     }
     
-    public init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double, strokeColor: NSColor, lineWidth: CGFloat) {
-        if abs(endPointX - startPointX) < abs(endPointY - startPointY) {
-            let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointX)]
+    public init(startPoint: CGPoint, endPoint: CGPoint, strokeColor: NSColor, lineWidth: CGFloat) {
+        if abs(endPoint.x - startPoint.x) < abs(endPoint.y - startPoint.y) {
+            let points = [startPoint, endPoint]
             super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
         } else {
-            let points = [Point(x: startPointX, y: startPointY), Point(x: endPointY, y: endPointY)]
+            let points = [startPoint, endPoint]
             super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
         }
     }
     
-    public init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double) {
-        if abs(endPointX - startPointX) < abs(endPointY - startPointY) {
-            let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointX)]
+    public init(startPoint: CGPoint, endPoint: CGPoint) {
+        if abs(endPoint.x - startPoint.x) < abs(endPoint.y - startPoint.y) {
+            let points = [startPoint, endPoint]
             super.init(points: points)
         } else {
-            let points = [Point(x: startPointX, y: startPointY), Point(x: endPointY, y: endPointY)]
+            let points = [startPoint, endPoint]
             super.init(points: points)
         }
     }

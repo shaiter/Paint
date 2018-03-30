@@ -16,13 +16,13 @@ open class Rectangle: Figure {
         super.draw()
     }
     
-    public init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double, strokeColor: NSColor, lineWidth: CGFloat) {
-        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+    public init(startPoint: CGPoint, endPoint: CGPoint, strokeColor: NSColor, lineWidth: CGFloat) {
+        let points = [startPoint, endPoint]
         super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
     }
     
-    public init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double) {
-        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+    public init(startPoint: CGPoint, endPoint: CGPoint) {
+        let points = [startPoint, endPoint]
         super.init(points: points)
     }
     

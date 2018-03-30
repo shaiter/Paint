@@ -13,9 +13,9 @@ open class Figure {
     public var strokeColor: NSColor
     public var lineWidth: CGFloat
     
-    public var points = [Point]()
+    public var points = [CGPoint]()
     
-    init(points: [Point], strokeColor: NSColor = NSColor.black, lineWidth: CGFloat = 2) {
+    init(points: [CGPoint], strokeColor: NSColor = NSColor.black, lineWidth: CGFloat = 2) {
         self.strokeColor = strokeColor
         self.lineWidth = lineWidth
         self.points = points
@@ -29,14 +29,4 @@ open class Figure {
         self.path.stroke()
     }
     
-}
-
-public struct Point {
-    public var x: Double
-    public var y: Double
-    
-    public init(x: Double, y: Double) {
-        self.x = x
-        self.y = y
-    }
 }

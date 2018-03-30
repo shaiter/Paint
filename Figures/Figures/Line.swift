@@ -11,18 +11,19 @@ import AppKit
 open class Line: Figure {
     
     override public func draw() {
+        self.path = NSBezierPath()
         path.move(to: CGPoint(x: self.points[0].x, y: self.points[0].y))
         path.line(to: CGPoint(x: self.points[1].x, y: self.points[1].y))
         super.draw()
     }
     
-    public init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double, strokeColor: NSColor, lineWidth: CGFloat) {
-        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+    public init(startPoint: CGPoint, endPoint: CGPoint, strokeColor: NSColor, lineWidth: CGFloat) {
+        let points = [startPoint, endPoint]
         super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
     }
     
-    public init(startPointX: Double, startPointY: Double, endPointX: Double, endPointY: Double) {
-        let points = [Point(x: startPointX, y: startPointY), Point(x: endPointX, y: endPointY)]
+    public init(startPoint: CGPoint, endPoint: CGPoint) {
+        let points = [startPoint, endPoint]
         super.init(points: points)
     }
     

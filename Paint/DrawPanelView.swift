@@ -10,13 +10,51 @@ import Cocoa
 import Figures
 
 class DrawPanelView: NSView {
-
+    
+//    var subview: NSView?
+    
+    override func mouseDown(with event: NSEvent) {
+        
+//        subview = NSView(frame: self.bounds)
+//        addSubview(subview!)
+        
+        let mouseCoord = event.locationInWindow
+        
+        print(mouseCoord)
+        newFigure.points[0] = mouseCoord
+        newFigure.points[1] = mouseCoord
+        list.append(newFigure)
+    }
+    
+    override func mouseDragged(with event: NSEvent) {
+        let mouseCoord = event.locationInWindow
+        list[list.count - 1].points[1] = mouseCoord
+        display()
+    }
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
+
         
-        for index in 0..<list.count {
-            list[index].draw()
+        for figure in list {
+            
+            figure.draw()
+            
+            
+//            if list[index] is Line {
+//                Drawing.draw(list[index] as! Line)
+//            } else if list[index] is Rectangle {
+//                    Drawing.draw(list[index] as! Rectangle)
+//            } else if list[index] is Square {
+//                Drawing.draw(list[index] as! Square)
+//            } else if list[index] is Ellipse {
+//                Drawing.draw(list[index] as! Ellipse)
+//            } else if list[index] is Circle {
+//                Drawing.draw(list[index] as! Circle)
+//            }
+            
         }
+        
     }
     
 }

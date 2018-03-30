@@ -19,11 +19,11 @@ open class Polygon: Figure {
         super.draw()
     }
     
-    public override init(points: [Point], strokeColor: NSColor, lineWidth: CGFloat) {
+    public override init(points: [CGPoint], strokeColor: NSColor, lineWidth: CGFloat) {
         super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
     }
     
-    public init(points:[Point]) {
+    public init(points:[CGPoint]) {
         super.init(points: points)
     }
 }
