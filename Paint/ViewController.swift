@@ -16,6 +16,8 @@ var creator: FigureCreator = LineCreater()
 
 class ViewController: NSViewController {
     
+    @IBOutlet weak var color: NSColorWell!
+    
     @IBAction func setLine(_ sender: NSButton) {
         creator = LineCreater()
     }

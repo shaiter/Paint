@@ -13,7 +13,15 @@ open class Figure {
     public var strokeColor: NSColor
     public var lineWidth: CGFloat
     
-    public var points = [CGPoint]()
+    private var _points = [CGPoint]()
+    public var points: [CGPoint] {
+        get {
+            return _points
+        }
+        set {
+            _points = newValue
+        }
+    }
     
     init(points: [CGPoint], strokeColor: NSColor = NSColor.black, lineWidth: CGFloat = 2) {
         self.strokeColor = strokeColor

@@ -10,6 +10,5 @@ import Figures
 
 class FigureCreator {
     func create() -> Figure? {return nil}
-    
 }
 
