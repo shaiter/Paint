@@ -40,7 +40,7 @@ class Drawing {
     
     static private func stroke(path: NSBezierPath, figure: Figure) {
         path.lineWidth = figure.lineWidth
-        figure.strokeColor.setStroke()
+        NSColor.black.setStroke()
         path.stroke()
     }
     

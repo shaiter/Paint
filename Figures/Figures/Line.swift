@@ -12,19 +12,23 @@ open class Line: Figure {
     
     override public func draw() {
         self.path = NSBezierPath()
-        path.move(to: CGPoint(x: self.points[0].x, y: self.points[0].y))
-        path.line(to: CGPoint(x: self.points[1].x, y: self.points[1].y))
+        path!.move(to: CGPoint(x: self.points[0].x, y: self.points[0].y))
+        path!.line(to: CGPoint(x: self.points[1].x, y: self.points[1].y))
         super.draw()
     }
     
     public init(startPoint: CGPoint, endPoint: CGPoint, strokeColor: NSColor, lineWidth: CGFloat) {
         let points = [startPoint, endPoint]
-        super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
+        super.init(points: points, type: "Line", strokeColor: strokeColor, lineWidth: lineWidth)
     }
     
     public init(startPoint: CGPoint, endPoint: CGPoint) {
         let points = [startPoint, endPoint]
-        super.init(points: points)
+        super.init(points: points, type: "Line")
+    }
+    
+    public required convenience init(from decoder: Decoder) throws {
+        try self.init(from: decoder)
     }
     
 }

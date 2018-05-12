@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/artemsajter/Desktop/&#x41e;&#x41e;&#x41f;/Paint/Paint/FigureCreator.swift">
-   </FileRef>
-   <FileRef
       location = "group:Figures/Figures.xcodeproj">
    </FileRef>
    <FileRef

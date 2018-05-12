@@ -3,14 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "DrawPanelView.mouseDragged(with:):DrawPanelView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "list">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "DrawPanelView.draw(_:):DrawPanelView.swift">
          <PersistentStrings>
             <PersistentString
@@ -19,7 +11,34 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ViewController.save(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DrawPanelView.mouseDragged(with:):DrawPanelView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.code(_:):ViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "DrawPanelView.mouseDown(with:):DrawPanelView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.load(_:):ViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "list">

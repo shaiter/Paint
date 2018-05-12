@@ -16,14 +16,17 @@ open class Rectangle: Figure {
         super.draw()
     }
     
-    public init(startPoint: CGPoint, endPoint: CGPoint, strokeColor: NSColor, lineWidth: CGFloat) {
-        let points = [startPoint, endPoint]
-        super.init(points: points, strokeColor: strokeColor, lineWidth: lineWidth)
+    public init(startPoint: CGPoint, endPoint: CGPoint, strokeColor: NSColor, lineWidth: CGFloat) {        let points = [startPoint, endPoint]
+        super.init(points: points, type: "Rectangle", strokeColor: strokeColor, lineWidth: lineWidth)
     }
     
     public init(startPoint: CGPoint, endPoint: CGPoint) {
         let points = [startPoint, endPoint]
-        super.init(points: points)
+        super.init(points: points, type: "Rectangle")
+    }
+    
+    public required convenience init(from decoder: Decoder) throws {
+       try self.init(from: decoder)
     }
     
 }

@@ -11,14 +11,17 @@ import Figures
 
 class DrawPanelView: NSView {
     
-    var newFigure = creator.create()!
+    private var newFigure = creator.create()!
+    private var color: NSColor?
     
     override func mouseDown(with event: NSEvent) {
         
         let mouseCoord = event.locationInWindow
         newFigure = creator.create()!
+        //ViewController.colo
         newFigure.points[0] = mouseCoord
         newFigure.points[1] = mouseCoord
+        //newFigure.strokeColor = color ?? NSColor.black
         list.append(newFigure)
     }
     

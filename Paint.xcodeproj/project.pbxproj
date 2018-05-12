@@ -9,16 +9,15 @@
 /* Begin PBXBuildFile section */
 		1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708D6DE203D46C80075D863 /* DrawPanelView.swift */; };
 		1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9C204955F300CECDC5 /* FigureList.swift */; };
+		17191A3E20A591B9001E9B15 /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17191A3D20A591B9001E9B15 /* Figures.framework */; };
 		175D04C4205E6B8100D07B90 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D04C3205E6B8100D07B90 /* Drawing.swift */; };
-		176E793F205D7C9D00A49DD6 /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; };
-		176E7940205D7C9D00A49DD6 /* Figures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 176E793E205D7C9100A49DD6 /* Figures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17DB56F7206F78640045972F /* FigureCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB56F6206F78640045972F /* FigureCreator.swift */; };
 		17E8FAFA206ED25300B08046 /* LineCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAF9206ED25300B08046 /* LineCreator.swift */; };
 		17E8FAFC206ED28100B08046 /* RectangleCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFB206ED28100B08046 /* RectangleCreator.swift */; };
 		17E8FAFE206ED2CB00B08046 /* SquareCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFD206ED2CB00B08046 /* SquareCreator.swift */; };
 		17E8FB00206ED31500B08046 /* EllipseCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFF206ED31500B08046 /* EllipseCreator.swift */; };
 		17E8FB02206ED33600B08046 /* CircleCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FB01206ED33600B08046 /* CircleCreator.swift */; };
 		17E8FB04206ED38E00B08046 /* FigureCreatorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */; };
-		17F725EE206ECCAA003F6E2B /* FigureCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F725ED206ECCAA003F6E2B /* FigureCreator.swift */; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
 		17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A487203C3A37004E4BDB /* ViewController.swift */; };
 		17F7A48A203C3A37004E4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A489203C3A37004E4BDB /* Assets.xcassets */; };
@@ -28,20 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		176E793D205D7C9100A49DD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 176E7939205D7C9100A49DD6 /* Figures.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 176E790B205D74CD00A49DD6;
-			remoteInfo = Figures;
-		};
-		176E7941205D7C9D00A49DD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 176E7939205D7C9100A49DD6 /* Figures.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 176E790A205D74CD00A49DD6;
-			remoteInfo = Figures;
-		};
 		17F7A495203C3A37004E4BDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17F7A47A203C3A37004E4BDB /* Project object */;
@@ -65,7 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				176E7940205D7C9D00A49DD6 /* Figures.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,15 +59,15 @@
 /* Begin PBXFileReference section */
 		1708D6DE203D46C80075D863 /* DrawPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPanelView.swift; sourceTree = "<group>"; };
 		1716CD9C204955F300CECDC5 /* FigureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureList.swift; sourceTree = "<group>"; };
+		17191A3D20A591B9001E9B15 /* Figures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Figures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		175D04C3205E6B8100D07B90 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
-		176E7939205D7C9100A49DD6 /* Figures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Figures.xcodeproj; path = Figures/Figures.xcodeproj; sourceTree = "<group>"; };
+		17DB56F6206F78640045972F /* FigureCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FigureCreator.swift; path = "/Users/artemsajter/Desktop/ООП/Paint/Paint/Creators/FigureCreator.swift"; sourceTree = "<absolute>"; };
 		17E8FAF9206ED25300B08046 /* LineCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineCreator.swift; sourceTree = "<group>"; };
 		17E8FAFB206ED28100B08046 /* RectangleCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCreator.swift; sourceTree = "<group>"; };
 		17E8FAFD206ED2CB00B08046 /* SquareCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCreator.swift; sourceTree = "<group>"; };
 		17E8FAFF206ED31500B08046 /* EllipseCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseCreator.swift; sourceTree = "<group>"; };
 		17E8FB01206ED33600B08046 /* CircleCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCreator.swift; sourceTree = "<group>"; };
 		17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureCreatorsList.swift; sourceTree = "<group>"; };
-		17F725ED206ECCAA003F6E2B /* FigureCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FigureCreator.swift; path = "/Users/artemsajter/Desktop/ООП/Paint/Paint/FigureCreator.swift"; sourceTree = "<absolute>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F7A487203C3A37004E4BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176E793F205D7C9D00A49DD6 /* Figures.framework in Frameworks */,
+				17191A3E20A591B9001E9B15 /* Figures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,18 +109,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		176E793A205D7C9100A49DD6 /* Products */ = {
+		17191A3C20A591B9001E9B15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				176E793E205D7C9100A49DD6 /* Figures.framework */,
+				17191A3D20A591B9001E9B15 /* Figures.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		17F725EF206ECCB4003F6E2B /* Creators */ = {
 			isa = PBXGroup;
 			children = (
-				17F725ED206ECCAA003F6E2B /* FigureCreator.swift */,
+				17DB56F6206F78640045972F /* FigureCreator.swift */,
 				17E8FAF9206ED25300B08046 /* LineCreator.swift */,
 				17E8FAFB206ED28100B08046 /* RectangleCreator.swift */,
 				17E8FAFD206ED2CB00B08046 /* SquareCreator.swift */,
@@ -150,11 +134,11 @@
 		17F7A479203C3A37004E4BDB = {
 			isa = PBXGroup;
 			children = (
-				176E7939205D7C9100A49DD6 /* Figures.xcodeproj */,
 				17F7A484203C3A37004E4BDB /* Paint */,
 				17F7A497203C3A37004E4BDB /* PaintTests */,
 				17F7A4A2203C3A37004E4BDB /* PaintUITests */,
 				17F7A483203C3A37004E4BDB /* Products */,
+				17191A3C20A591B9001E9B15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,7 +202,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				176E7942205D7C9D00A49DD6 /* PBXTargetDependency */,
 			);
 			name = Paint;
 			productName = Paint;
@@ -303,12 +286,6 @@
 			mainGroup = 17F7A479203C3A37004E4BDB;
 			productRefGroup = 17F7A483203C3A37004E4BDB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 176E793A205D7C9100A49DD6 /* Products */;
-					ProjectRef = 176E7939205D7C9100A49DD6 /* Figures.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				17F7A481203C3A37004E4BDB /* Paint */,
@@ -317,16 +294,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		176E793E205D7C9100A49DD6 /* Figures.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Figures.framework;
-			remoteRef = 176E793D205D7C9100A49DD6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		17F7A480203C3A37004E4BDB /* Resources */ = {
@@ -359,13 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F725EE206ECCAA003F6E2B /* FigureCreator.swift in Sources */,
 				17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */,
 				1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */,
 				17E8FAFE206ED2CB00B08046 /* SquareCreator.swift in Sources */,
 				1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */,
 				17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */,
 				17E8FAFA206ED25300B08046 /* LineCreator.swift in Sources */,
+				17DB56F7206F78640045972F /* FigureCreator.swift in Sources */,
 				17E8FB00206ED31500B08046 /* EllipseCreator.swift in Sources */,
 				17E8FB04206ED38E00B08046 /* FigureCreatorsList.swift in Sources */,
 				17E8FAFC206ED28100B08046 /* RectangleCreator.swift in Sources */,
@@ -393,11 +360,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		176E7942205D7C9D00A49DD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Figures;
-			targetProxy = 176E7941205D7C9D00A49DD6 /* PBXContainerItemProxy */;
-		};
 		17F7A496203C3A37004E4BDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17F7A481203C3A37004E4BDB /* Paint */;
