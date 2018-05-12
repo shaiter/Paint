@@ -721,7 +721,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setLine:" target="XfG-lQ-9wD" id="EUD-ik-iAI"/>
+                                    <action selector="setFigure:" target="XfG-lQ-9wD" id="Xr6-gH-7aP"/>
                                 </connections>
                             </button>
                             <button identifier="Square" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zny-2F-abx">
@@ -732,7 +732,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setSquare:" target="XfG-lQ-9wD" id="1jf-8K-YqU"/>
+                                    <action selector="setFigure:" target="XfG-lQ-9wD" id="37Q-oK-a2K"/>
                                 </connections>
                             </button>
                             <button identifier="Rectangle" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apv-DN-phu">
@@ -743,7 +743,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setRectangle:" target="XfG-lQ-9wD" id="U9H-Dd-rwS"/>
+                                    <action selector="setFigure:" target="XfG-lQ-9wD" id="iIp-Mj-QcE"/>
                                 </connections>
                             </button>
                             <button identifier="Circle" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSY-Vf-xGk">
@@ -754,7 +754,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setCircle:" target="XfG-lQ-9wD" id="i5I-Mu-3vB"/>
+                                    <action selector="setFigure:" target="XfG-lQ-9wD" id="dvP-Ko-0Tk"/>
                                 </connections>
                             </button>
                             <button identifier="Ellipse" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R5m-c6-V23">
@@ -765,7 +765,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="setEllipse:" target="XfG-lQ-9wD" id="vEu-cg-CQL"/>
+                                    <action selector="setFigure:" target="XfG-lQ-9wD" id="9IQ-kW-bNn"/>
                                 </connections>
                             </button>
                             <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yz6-qL-N4t">

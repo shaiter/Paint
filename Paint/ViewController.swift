@@ -19,25 +19,31 @@ class ViewController: NSViewController {
     @IBOutlet weak var color: NSColorWell!
     @IBOutlet weak var drawPanel: DrawPanelView!
     
-    @IBAction private func setLine(_ sender: NSButton) {
-        creator = LineCreater()
+    
+    
+    
+    
+    
+    @IBAction private func setFigure(_ sender: NSButton) {
+        switch sender.identifier?.rawValue {
+        case "Line":
+            creator = CreatorsList.creators[0]
+        case "Rectangle":
+            creator = CreatorsList.creators[1]
+        case "Square":
+            creator = CreatorsList.creators[2]
+        case "Ellipse":
+            creator = CreatorsList.creators[3]
+        case "Circle":
+            creator = CreatorsList.creators[4]
+        default:
+            print("no such figure")
+        }
     }
     
-    @IBAction private func setSquare(_ sender: NSButton) {
-        creator = SquareCreater()
-    }
     
-    @IBAction private func setRectangle(_ sender: NSButton) {
-        creator = RectangleCreater()
-    }
     
-    @IBAction private func setCircle(_ sender: NSButton) {
-        creator = CircleCreater()
-    }
     
-    @IBAction private func setEllipse(_ sender: NSButton) {
-        creator = EllipseCreater()
-    }
     @IBAction func save(_ sender: NSButton) {
         let data = try? JSONEncoder().encode(list)
         let savePanel = NSSavePanel()
@@ -56,6 +62,11 @@ class ViewController: NSViewController {
     
     @IBAction func load(_ sender: NSButton) {
         let openPanel = NSOpenPanel()
+        
+        openPanel.canChooseDirectories = false
+        openPanel.allowsMultipleSelection = false
+        openPanel.allowedFileTypes = ["pnt"]
+        
         openPanel.runModal()
         
         if let fileURL = openPanel.url {
