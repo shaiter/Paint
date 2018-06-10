@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1708D6DF203D46C80075D863 /* DrawPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708D6DE203D46C80075D863 /* DrawPanelView.swift */; };
 		1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716CD9C204955F300CECDC5 /* FigureList.swift */; };
-		17191A3E20A591B9001E9B15 /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17191A3D20A591B9001E9B15 /* Figures.framework */; };
+		174DB42220CBDFAE00BE1C0D /* Figures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17191A3D20A591B9001E9B15 /* Figures.framework */; };
+		174DB42320CBDFAE00BE1C0D /* Figures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17191A3D20A591B9001E9B15 /* Figures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		175D04C4205E6B8100D07B90 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D04C3205E6B8100D07B90 /* Drawing.swift */; };
 		17DB56F7206F78640045972F /* FigureCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB56F6206F78640045972F /* FigureCreator.swift */; };
 		17E8FAFA206ED25300B08046 /* LineCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAF9206ED25300B08046 /* LineCreator.swift */; };
@@ -18,6 +19,7 @@
 		17E8FB00206ED31500B08046 /* EllipseCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FAFF206ED31500B08046 /* EllipseCreator.swift */; };
 		17E8FB02206ED33600B08046 /* CircleCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FB01206ED33600B08046 /* CircleCreator.swift */; };
 		17E8FB04206ED38E00B08046 /* FigureCreatorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */; };
+		17F4798220CD2073001191B1 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4798120CD2073001191B1 /* UIConfigurations.swift */; };
 		17F7A486203C3A37004E4BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A485203C3A37004E4BDB /* AppDelegate.swift */; };
 		17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F7A487203C3A37004E4BDB /* ViewController.swift */; };
 		17F7A48A203C3A37004E4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F7A489203C3A37004E4BDB /* Assets.xcassets */; };
@@ -50,6 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				174DB42320CBDFAE00BE1C0D /* Figures.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +71,7 @@
 		17E8FAFF206ED31500B08046 /* EllipseCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseCreator.swift; sourceTree = "<group>"; };
 		17E8FB01206ED33600B08046 /* CircleCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCreator.swift; sourceTree = "<group>"; };
 		17E8FB03206ED38E00B08046 /* FigureCreatorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureCreatorsList.swift; sourceTree = "<group>"; };
+		17F4798120CD2073001191B1 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
 		17F7A482203C3A37004E4BDB /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F7A485203C3A37004E4BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F7A487203C3A37004E4BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17191A3E20A591B9001E9B15 /* Figures.framework in Frameworks */,
+				174DB42220CBDFAE00BE1C0D /* Figures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +162,10 @@
 				17F725EF206ECCB4003F6E2B /* Creators */,
 				17F7A485203C3A37004E4BDB /* AppDelegate.swift */,
 				17F7A487203C3A37004E4BDB /* ViewController.swift */,
-				175D04C3205E6B8100D07B90 /* Drawing.swift */,
 				1708D6DE203D46C80075D863 /* DrawPanelView.swift */,
+				17F4798120CD2073001191B1 /* UIConfigurations.swift */,
 				1716CD9C204955F300CECDC5 /* FigureList.swift */,
+				175D04C3205E6B8100D07B90 /* Drawing.swift */,
 				17F7A489203C3A37004E4BDB /* Assets.xcassets */,
 				17F7A48B203C3A37004E4BDB /* Main.storyboard */,
 				17F7A48E203C3A37004E4BDB /* Info.plist */,
@@ -258,8 +263,11 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.Sandbox = {
+							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
 							};
 						};
 					};
@@ -326,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F4798220CD2073001191B1 /* UIConfigurations.swift in Sources */,
 				17F7A488203C3A37004E4BDB /* ViewController.swift in Sources */,
 				1716CD9D204955F300CECDC5 /* FigureList.swift in Sources */,
 				17E8FAFE206ED2CB00B08046 /* SquareCreator.swift in Sources */,
@@ -495,6 +504,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Paint/Paint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32X6A9H2H2;
@@ -515,6 +525,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Paint/Paint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32X6A9H2H2;

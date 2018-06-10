@@ -18,11 +18,13 @@ class DrawPanelView: NSView {
         
         let mouseCoord = event.locationInWindow
         newFigure = creator.create()!
-        //ViewController.colo
         newFigure.points[0] = mouseCoord
         newFigure.points[1] = mouseCoord
         //newFigure.strokeColor = color ?? NSColor.black
         list.append(newFigure)
+        
+        super.mouseDown(with: event)
+        
     }
     
     override func mouseDragged(with event: NSEvent) {
@@ -31,26 +33,15 @@ class DrawPanelView: NSView {
         display()
     }
     
+    override func mouseUp(with event: NSEvent) {
+        super.mouseUp(with: event)
+    }
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
         for figure in list {
-            
             figure.draw()
-            
-            
-//            if list[index] is Line {
-//                Drawing.draw(list[index] as! Line)
-//            } else if list[index] is Rectangle {
-//                    Drawing.draw(list[index] as! Rectangle)
-//            } else if list[index] is Square {
-//                Drawing.draw(list[index] as! Square)
-//            } else if list[index] is Ellipse {
-//                Drawing.draw(list[index] as! Ellipse)
-//            } else if list[index] is Circle {
-//                Drawing.draw(list[index] as! Circle)
-//            }
-            
         }
         
     }

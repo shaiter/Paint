@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Paint/DrawPanelView.swift"
-            timestampString = "547763676.432659"
+            timestampString = "550334703.89274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59">
+            startingLineNumber = "50"
+            endingLineNumber = "50">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
